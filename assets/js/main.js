@@ -73,6 +73,111 @@ function imprimirCoders() {
 
 //Botones
 
+//validando radio-button
+var selected = false;
+
+
+function validando0() {
+  var test0 = document.getElementsByName("test0");
+
+  for(var i=0; i<test0.length; i++) {
+    if(test0[i].checked) {
+      selected = true;
+      break;
+    }
+  }
+  if(!selected) {
+    alert("selecciona una opción");
+    return false;
+  }
+}
+
+function validando1() {
+  var test1 = document.getElementsByName("test0");
+
+  for(var i=0; i<test1.length; i++) {
+    if(test1[i].checked) {
+      selected = true;
+      break;
+    }
+  }
+  if(!selected) {
+    alert("selecciona una opción");
+    return false;
+  }
+}
+
+function validando2() {
+  var test2 = document.getElementsByName("test0");
+
+  for(var i=0; i<test2.length; i++) {
+    if(test2[i].checked) {
+      selected = true;
+      break;
+    }
+  }
+  if(!selected) {
+    alert("selecciona una opción");
+    return false;
+  }
+}
+
+function validarSprintUno() {
+  validando0();
+  validando1();
+  validando2();
+}
+
+function validando3() {
+  var test3 = document.getElementsByName("test3");
+
+  for(var i=0; i<test3.length; i++) {
+    if(test3[i].checked) {
+      selected = true;
+      break;
+    }
+  }
+  if(!selected) {
+    alert("selecciona una opción");
+    return false;
+  }
+}
+
+function validando4() {
+  var test4 = document.getElementsByName("test4");
+
+  for(var i=0; i<test4.length; i++) {
+    if(test4[i].checked) {
+      selected = true;
+      break;
+    }
+  }
+  if(!selected) {
+    alert("selecciona una opción");
+    return false;
+  }
+}
+
+function validando5() {
+  var test5 = document.getElementsByName("test5");
+
+  for(var i=0; i<test5.length; i++) {
+    if(test5[i].checked) {
+      selected = true;
+      break;
+    }
+  }
+  if(!selected) {
+    alert("selecciona una opción");
+    return false;
+  }
+}
+
+function validarSprintDos() {
+  validando3();
+  validando4();
+  validando5();
+}
 
   function sprint1(divtexte) {
 	var divtext = document.getElementById(divtexte);
