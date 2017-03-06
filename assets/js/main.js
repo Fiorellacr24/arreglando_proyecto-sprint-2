@@ -1,3 +1,7 @@
+//identifica usuario
+//var user = prompt("Ingresa tu nombre");
+//document.getElementById('name').innerHTML = user;
+
 //Dropdown button
 
 function myFunction() {
@@ -74,51 +78,54 @@ function imprimirCoders() {
 //Botones
 
 //validando radio-button
-var selected = false;
-
+var selected1;
+var contador1 = 0;
 
 function validando0() {
+  selected1 = false;
   var test0 = document.getElementsByName("test0");
 
   for(var i=0; i<test0.length; i++) {
     if(test0[i].checked) {
-      selected = true;
+      selected1 = true;
       break;
     }
-  }
-  if(!selected) {
+}
+  if(!selected1) {
     alert("selecciona una opción");
-    return false;
+    //return false;
   }
 }
 
 function validando1() {
+  selected1 = false;
   var test1 = document.getElementsByName("test0");
 
   for(var i=0; i<test1.length; i++) {
     if(test1[i].checked) {
-      selected = true;
+      selected1 = true;
       break;
     }
   }
-  if(!selected) {
+  if(!selected1) {
     alert("selecciona una opción");
-    return false;
+    //return false;
   }
 }
 
 function validando2() {
+  selected1 = false;
   var test2 = document.getElementsByName("test0");
 
   for(var i=0; i<test2.length; i++) {
     if(test2[i].checked) {
-      selected = true;
+      selected1 = true;
       break;
     }
   }
-  if(!selected) {
+  if(!selected1) {
     alert("selecciona una opción");
-    return false;
+    //return false;
   }
 }
 
@@ -128,8 +135,16 @@ function validarSprintUno() {
   validando2();
 }
 
+var selected;
+var contador2 = 0;
+
 function validando3() {
+  selected = false;
   var test3 = document.getElementsByName("test3");
+  if(test3[0].checked) {
+    contador2 += 1;
+    console.log(contador2);
+  }
 
   for(var i=0; i<test3.length; i++) {
     if(test3[i].checked) {
@@ -144,6 +159,7 @@ function validando3() {
 }
 
 function validando4() {
+  selected = false;
   var test4 = document.getElementsByName("test4");
 
   for(var i=0; i<test4.length; i++) {
@@ -159,6 +175,7 @@ function validando4() {
 }
 
 function validando5() {
+  selected = false;
   var test5 = document.getElementsByName("test5");
 
   for(var i=0; i<test5.length; i++) {
@@ -179,11 +196,12 @@ function validarSprintDos() {
   validando5();
 }
 
-  function sprint1(divtexte) {
-	var divtext = document.getElementById(divtexte);
-	if (divtext.style.display == "block" ) {
-		divtext.style.display = "none";
-	} else{
-		divtext.style.display = "block";
-	}
+//Mostrar / Ocultar
+function sprint1(divtexte) {
+  var divtext = document.getElementById(divtexte);
+  if (divtext.style.display == "block" ) {
+  	divtext.style.display = "none";
+  } else{
+  	divtext.style.display = "block";
+  }
 }
