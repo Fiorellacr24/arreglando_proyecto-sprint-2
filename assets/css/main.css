@@ -21,7 +21,11 @@ body {
 
 header {
   padding: 14px 42px;
+  margin: 0 auto;
+  display: block;
+  width: 40%;
 }
+
 
 input {
   margin-right: 14px;

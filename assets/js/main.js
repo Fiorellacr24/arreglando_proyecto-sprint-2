@@ -70,3 +70,5 @@ function imprimirCoders() {
                                                   "Promoción: " + coders[7].promocion + "<p>" +
                                                       "Estado: " + coders[7].estado + "<p>";
   } imprimirCoders();
+
+//Botones
