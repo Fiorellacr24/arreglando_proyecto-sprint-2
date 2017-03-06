@@ -109,3 +109,12 @@ input {
 .show {
   display:block;
 }
+
+
+
+#sprint-1{
+	display : none;
+}
+#sprint-3{
+	display : none;
+}
