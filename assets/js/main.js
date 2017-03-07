@@ -79,7 +79,7 @@ function imprimirCoders() {
 
 //validando radio-button
 var selected1;
-var contador1 = 0;
+//var contador1 = 0;
 
 function validando0() {
   selected1 = false;
@@ -93,7 +93,7 @@ function validando0() {
 }
   if(!selected1) {
     alert("selecciona una opción");
-    //return false;
+    return false;
   }
 }
 
@@ -109,7 +109,7 @@ function validando1() {
   }
   if(!selected1) {
     alert("selecciona una opción");
-    //return false;
+    return false;
   }
 }
 
@@ -125,7 +125,7 @@ function validando2() {
   }
   if(!selected1) {
     alert("selecciona una opción");
-    //return false;
+    return false;
   }
 }
 
@@ -133,18 +133,29 @@ function validarSprintUno() {
   validando0();
   validando1();
   validando2();
+
+	var contador1 = 0;
+
+	var test0 = document.getElementsByName("test0");
+	if(test0[0].checked) {
+		contador1 += 1;
+	}
+	var test1 = document.getElementsByName("test1");
+	if(test1[0].checked) {
+		contador1 += 1;
+	}
+	var test2 = document.getElementsByName("test2");
+	if(test2[2].checked) {
+		contador1 += 1;
+	}
+	console.log(contador1);
 }
 
 var selected;
-var contador2 = 0;
 
 function validando3() {
   selected = false;
   var test3 = document.getElementsByName("test3");
-  if(test3[0].checked) {
-    contador2 += 1;
-    console.log(contador2);
-  }
 
   for(var i=0; i<test3.length; i++) {
     if(test3[i].checked) {
@@ -191,9 +202,26 @@ function validando5() {
 }
 
 function validarSprintDos() {
-  validando3();
-  validando4();
-  validando5();
+	validando3();
+	validando4();
+	validando5();
+
+	var contador2 = 0;
+
+	var test3 = document.getElementsByName("test3");
+	if(test3[0].checked) {
+		contador2 += 1;
+	}
+	var test4 = document.getElementsByName("test4");
+	if(test4[0].checked) {
+		contador2 += 1;
+	}
+	var test5 = document.getElementsByName("test5");
+	if(test5[1].checked) {
+		contador2 += 1;
+	}
+	console.log(contador2);
+
 }
 
 //Mostrar / Ocultar
